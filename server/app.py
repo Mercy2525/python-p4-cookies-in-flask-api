@@ -4,6 +4,7 @@ app = Flask(__name__)
 app.json.compact = False
 
 app.secret_key = b'?w\x85Z\x08Q\xbdO\xb8\xa9\xb65Kj\xa9_'
+#this key helps and you can't edit the session
 
 @app.route('/sessions/<string:key>', methods=['GET'])
 def show_session(key):
